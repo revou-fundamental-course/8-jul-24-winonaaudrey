@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Main header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Main layout */
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+    flex: 1;
+}
+
+/* Form styles */
+.gender {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.form {
+    background-color: lavender;
+    padding: 20px; 
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.submit, .reset {
+    background-color: cornsilk;
+    border: 3px solid black;
+    border-radius: 8px; 
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 3px solid black;
+}
+
+/* Right content */
+.main-content {
+    flex: 0.6;
+}
+
+.result {
+    text-align: center;
+    background-color: lavender;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.bodyweight {
+    margin-top: 10px;
+}
+
+.konsul, .regis {
+    background-color: cornsilk;
+    border: 3px solid black;
+    border-radius: 8px; 
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+.gi {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px; 
+}
+
+/* responsive website*/
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form, .main-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type=number] {
+        width: calc(100% - 26px); /* Adjust untuk padding dan border */
+    }
+
+    .submit, .reset, .konsul, .regis {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gender, .bodyweight, .form div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form, .main-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type=number] {
+        width: calc(100% - 26px);
+    }
+
+    .submit, .reset, .konsul, .regis {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gender, .bodyweight, .form div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
